@@ -1,7 +1,9 @@
 ## CC3200
 
-Some example sketches and performance results for the TI CC3200 LAUNCHPAD 
-using the Energia IDE.  The CC3200 is a CortexM4 running at 80mhz. 
+Some example sketches and performance results for the TI 
+[CC3200 LAUNCHPAD](http://www.ti.com/tool/cc3200-launchxl) 
+using the Energia IDE.  The CC3200 is a CortexM4 running at 80mhz
+with builtin WiFi. 
 The CC3200 is also used in the
 [WiPy](http://wipy.io/)
 
@@ -18,7 +20,7 @@ The CC3200 is also used in the
 
 ------------------------------------
 
-Some anecdotal performance comparions:
+Some anecdotal performance comparisons:
 
 * [computational speed](https://github.com/manitou48/DUEZoo/blob/master/perf.txt)
 * [power consumption] (https://github.com/manitou48/DUEZoo/blob/master/power.txt)
@@ -28,4 +30,4 @@ Some anecdotal performance comparions:
 
 
 
-
+The [WiPy firmware](https://github.com/wipy/wipy)
