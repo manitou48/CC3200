@@ -14,7 +14,7 @@ The CC3200 is also used in the
  IRtest  | proof-of-concept of IR remote (timer PWM)
  mem2mem.ino | DMA memcpy
  spidma.ino | SPI+DMA
- rng.ino  | random entropy generatror from dueling clocks(systick/slow clock)
+ rng.ino  | random entropy generator from dueling clocks(systick/slow clock)
  slowclk.ino | slow clock tester, strange interference with delay() ??
 
 
@@ -27,6 +27,7 @@ Some anecdotal performance comparisons:
 * [ISR latency] (https://github.com/manitou48/DUEZoo/blob/master/isrperf.txt)
 * [SPI+DMA](https://github.com/manitou48/DUEZoo/blob/master/SPIperf.txt)
 * [DMA memcpy](https://github.com/manitou48/DUEZoo/blob/master/mem2mem.txt)
+* discussion of ESP8266 and CC3200 [performance](http://forum.arduino.cc/index.php?topic=364521.0)
 
 
 
