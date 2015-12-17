@@ -46,7 +46,8 @@ void loop()
   UDMAStartTransfer(DMACHNL);
   //while(!dmadone);
   //while(! *p);
-  while(!iDone);
+  //while(!iDone);
+  while(MAP_uDMAChannelModeGet(DMACHNL) != UDMA_MODE_STOP);
   t= micros()-t;
   Serial.print(t); Serial.print(" us  ");
   Serial.println(dst[3]);

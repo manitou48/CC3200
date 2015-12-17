@@ -3,7 +3,7 @@
 Some example sketches and performance results for the TI 
 [CC3200 LAUNCHPAD](http://www.ti.com/tool/cc3200-launchxl) 
 using the Energia IDE.  The CC3200 is a CortexM4 running at 80mhz
-with builtin WiFi. 
+with built-in WiFi. 
 The CC3200 is also used in the
 [WiPy](http://wipy.io/)
 

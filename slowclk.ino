@@ -7,10 +7,11 @@
 volatile unsigned int tick;
 
 void myisr() {
+  PRCMIntStatus(); // clear
   long long t = PRCMSlowClkCtrGet();
   PRCMSlowClkCtrMatchSet(t + DTICKS); // next interrupt time
   tick++;
-  PRCMIntStatus(); // clear
+  
 }
 
 void setup()
@@ -25,9 +26,15 @@ void setup()
 
 void loop()
 {
-  // put your main code here, to run repeatedly:
+  static unsigned int prev = PRCMSlowClkCtrGet();
+  static unsigned int mprev = millis();
   delay(4000);
   unsigned int t = PRCMSlowClkCtrGet();
+  unsigned int m = millis();
   Serial.print(t); Serial.print(" ");
+  Serial.print((t-prev)/32768.,3); Serial.print(" s  ");
+  Serial.print(m-mprev); Serial.print(" ms   ");
   Serial.println(tick);
+  prev = t;
+  mprev=m;
 }
