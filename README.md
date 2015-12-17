@@ -16,6 +16,7 @@ The CC3200 is also used in the
  spidma.ino | SPI+DMA
  rng.ino  | random entropy generator from dueling clocks(systick/slow clock)
  slowclk.ino | slow clock tester, strange interference with delay() ??
+ shamd5tst.ino | MD5 hardware test  19320KBs 
 
 
 ------------------------------------
