@@ -17,6 +17,9 @@ The CC3200 is also used in the
  rng.ino  | random entropy generator from dueling clocks(systick/slow clock)
  slowclk.ino | slow clock tester, strange interference with delay() ??
  shamd5tst.ino | MD5 hardware test  19320KBs 
+ pwmDMA.ino | continuous DMA ping-pong update of PWM duty cycle
+ adcDMA.ino | DMA read of ADC 
+ timedADC.ino | timer-triggered read of ADC into DMA buffer
 
 
 ------------------------------------
